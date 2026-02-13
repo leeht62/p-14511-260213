@@ -1,4 +1,4 @@
-package com.back.wiseSaying.entity;
+package com.back.domain.wiseSaying.entity;
 
 import jakarta.persistence.*;
 
@@ -13,5 +13,10 @@ public class Post {
 
   @Column(length = 50, nullable = false)
   private String content;
+
+  public Post(String title,String content){
+    this.content=content;
+    this.title=title;
+  }
 }
 
